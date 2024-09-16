@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Location Finder</title>
+    <link rel="stylesheet" href="app.css" />
     <script src="dist/bundle.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="city" placeholder="Enter City" />
+      <input type="text" id="state" placeholder="Enter State" />
+      <input type="text" id="country" placeholder="Enter Country" />
+      <input type="text" id="postalcode" placeholder="Enter Postal Code" />
+      <button type="submit">Search Address</button>
+    </form>
+    <div class="title">
+    <h4 id="response"></h4>
+</div>
+    <div id="map"></div>
+  </body>
 </html>
